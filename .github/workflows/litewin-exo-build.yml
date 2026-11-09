@@ -2,6 +2,8 @@ name: Build LiteWin EXO
 on:
   push:
     branches: [litewin-exo-build-20261109]
+  pull_request:
+    branches: [master]
 jobs:
   build:
     runs-on: windows-latest
